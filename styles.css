@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 237, 237);
+    color:white;
+    min-height: 100vh;
+}
+.container{
+    max-width:480px;
+    height:100vh;
+    padding: 0;
+    background-color: white;
+    position:relative;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(46, 50, 50, 0.93);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(46, 50, 50, 0.93);
+    box-shadow:         1px 1px 5px 0px rgba(46, 50, 50, 0.93);
+
+}
+header{
+    background: url("./images/bg.jpg")no-repeat;
+    background-size: cover;
+    height:38vh;
+}
+.date{
+    position:absolute;
+    top:195px;
+    color:rgb(227, 227, 231);
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+ form input,  form button{
+    padding:0.5rem;
+    font-size: 1.5rem;
+    border:none;
+    outline-style: none !important;
+    background-color: white;
+}
+ form input{
+    width:433px;
+}
+form button{
+    color:#85a5fd;
+    background: white;
+    font-size:30px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.todo-container{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.todo-list{
+    width:469px;
+    list-style: none;  
+    background-color: white;
+}
+.todo{
+    margin:0;
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgb(227, 227, 231) ;
+
+}
+.todo li{
+    flex:1;
+}
+.trash-btn, .complete-btn{
+   background: white !important;
+   color:rgb(44, 43, 43);
+   border:none;
+   margin-left:20px;
+   padding:10px 5px;
+   cursor: pointer;
+   font-size: 1rem;
+   outline-style: none !important;
+}
+.todo-item{
+    padding:0rem 0.5rem;
+}
+.fa-trash-o, .fa-check-square-o{
+    pointer-events: none;
+    font-size: 20px;
+}
+.completed{
+    text-decoration: line-through;
+   
+}
